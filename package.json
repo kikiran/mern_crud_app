@@ -1,0 +1,20 @@
+{
+  "name": "mern_crud_app",
+  "version": "1.0.0",
+  "description": "Creating MERN APP with CRUD Operations",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "author": "KIRANKUMAR",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
