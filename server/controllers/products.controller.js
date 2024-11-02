@@ -54,13 +54,8 @@ export const deleteProduct = async (req, res) => {
       .json({ success: false, message: "Product ID Not found !" });
   }
   try {
-    const deleteProduct = await Product.findByIdAndDelete(id);
+    await Product.findByIdAndDelete(id);
 
-    if (deleteProduct) {
-      return res
-        .status(404)
-        .json({ success: false, message: "Product ID Not found !" });
-    }
     res.status(200).json({ success: true, message: "Successfully Deleted" });
   } catch (error) {
     res.status(500).json({ success: false, message: "Something went wrong !" });
